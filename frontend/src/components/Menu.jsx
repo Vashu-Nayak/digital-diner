@@ -12,7 +12,7 @@ function Menu() {
   useEffect(() => {
     const fetchMenu = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/menu');
+        const response = await axios.get('https://digital-diner-backend-rnjo.onrender.com/api/menu');
         const items = response.data;
 
 

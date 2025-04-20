@@ -8,7 +8,7 @@ function OrderHistory() {
 
   const fetchOrders = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/orders/${phoneNumber}`);
+      const response = await axios.get(`https://digital-diner-backend-rnjo.onrender.com/api/orders/${phoneNumber}`);
       setOrders(response.data);
       setError('');
     } catch (err) {
@@ -18,13 +18,13 @@ function OrderHistory() {
 
   return (
     <div>
-      <div className="flex justify-center mb-4">
+      <div className="flex justify-center mb-4 mt-3">
         <input
           type="text"
           placeholder="Enter phone number"
           value={phoneNumber}
           onChange={(e) => setPhoneNumber(e.target.value)}
-          className="border border-gray-300 rounded-l-lg py-2 px-4"
+          className="border border-gray-300 rounded-l-lg py-2 px-4 "
         />
         <button
           onClick={fetchOrders}

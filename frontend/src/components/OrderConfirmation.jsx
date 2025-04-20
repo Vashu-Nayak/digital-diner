@@ -11,7 +11,7 @@ function OrderConfirmation() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/orders', {
+      const response = await axios.post('https://digital-diner-backend-rnjo.onrender.com/api/orders', {
         name,
         phoneNumber,
         cart,

@@ -13,10 +13,10 @@ function App() {
     <div className='min-h-screen bg-gray-50'>
       <Navbar />
       <Routes>
-        <Route path="/menu" element={<Menu />} />
+        <Route path="/" element={<Menu />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/order" element={<OrderConfirmation />} />
-        <Route path="/orders" element={<OrderHistory />} />
+        <Route path="/history" element={<OrderHistory />} />
       </Routes>
       
     </div>
